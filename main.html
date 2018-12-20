@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    hello world
+    <script>
+        window.fetch("http://api.openweathermap.org/data/2.5/weather?q=Rennes&lang=fr&units=metric&appid=dfd91f8314c437748693aba934633215")
+            .then(res => res.json())
+            .then(resJson => console.log(resJson))
+    </script>
+</body>
+</html>
